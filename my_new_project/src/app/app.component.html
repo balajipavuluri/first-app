@@ -1,0 +1,36 @@
+<!-- app.component.html -->
+<div>
+  <nav>
+    <ul style="list-style-type: none; padding: 0; display: flex; gap: 20px">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          style="text-decoration: none; color: blue"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/contact"
+          routerLinkActive="active"
+          style="text-decoration: none; color: blue"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- Routed Views will be displayed here -->
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Optional: Add some styles to visually differentiate the active page link -->
+<style>
+  .active {
+    font-weight: bold;
+    color: red;
+  }
+</style>
